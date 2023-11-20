@@ -2,7 +2,6 @@ class Solution {
     public String solution(int[] food) {
         String answer = "";
         int num = 0;
-        // a + 0 + a 로 답?
             
         for(int i = 1; i < food.length; i++) {
             if(food[i] / 2 != 0) {
@@ -14,7 +13,7 @@ class Solution {
             }
         }
         
-        answer += String.valueOf(0);
+        answer += "0";
         
         for(int i = answer.length() - 2; i >= 0; i--) {
             answer += String.valueOf(answer.charAt(i));
