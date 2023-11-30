@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n;
-        // 중첩 for문으로 시도했지만 못풀겠음 -> 그러면 그냥 새로운 배열을 만들어서 count해주면?
+        // 2중 for문으로 시도했지만 못풀겠음 -> 그러면 그냥 새로운 배열을 만들어서 count해주면?
         // 문제를... 잘... 읽자...
         int[] student = new int[n];
         
