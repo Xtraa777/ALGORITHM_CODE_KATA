@@ -8,10 +8,10 @@ class Solution {
         for (int intIngredient : ingredient) {
             hamburger.push(intIngredient);
             if (hamburger.size() > 3) {
-                if (hamburger.get(hamburger.size() - 4) == 1 &&
-                    hamburger.get(hamburger.size() - 3) == 2 &&
+                if (hamburger.get(hamburger.size() - 1) == 1 &&
                     hamburger.get(hamburger.size() - 2) == 3 &&
-                    hamburger.get(hamburger.size() - 1) == 1) {
+                    hamburger.get(hamburger.size() - 3) == 2 &&
+                    hamburger.get(hamburger.size() - 4) == 1) {
                     
                     hamburger.pop();
                     hamburger.pop();
