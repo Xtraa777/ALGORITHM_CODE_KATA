@@ -8,7 +8,7 @@ class Solution {
         for (; h <= yellow; h++) {
             if (yellow % h == 0) {
                 w = yellow / h; // w * h = yellow
-                if ((w + 2) * (h + 2) == total) {
+                if ((w + 2) * (h + 2) == total) { // (w + 2) * (h + 2) == yellow + brown
                     break;
                 }
             }
