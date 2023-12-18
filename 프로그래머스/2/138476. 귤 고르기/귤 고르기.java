@@ -16,11 +16,11 @@ class Solution {
         }
         
         Arrays.sort(counts);
-        int index = counts.length - 1;
         int result = 1;
-        for (; index >= 0; index--) {
-            if (k > counts[index]) {
-                k -= counts[index];
+        int j = counts.length - 1;
+        for (; j >= 0; j--) {
+            if (k > counts[j]) {
+                k -= counts[j];
                 result++;
             } else {
                 break;
