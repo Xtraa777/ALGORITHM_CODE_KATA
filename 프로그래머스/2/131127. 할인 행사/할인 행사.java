@@ -9,11 +9,9 @@ class Solution {
             for (; j < want.length; j++) { // want 품목
                 int count = 0;
                 for (int k = i; k <= i + 9; k++) {
-                    if (want[j].equals(discount[k])) {
-                        count++;
-                    }
+                    if (want[j].equals(discount[k])) count++;
                 }
-                if (count < number[j]) break;
+                if (count != number[j]) break;
             }
             if (j == want.length) answer++;
         }
