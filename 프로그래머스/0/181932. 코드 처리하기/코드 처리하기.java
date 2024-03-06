@@ -26,7 +26,7 @@ class Solution {
             }
         }
         
-        if (ret == "") {
+        if (ret.equals("")) {
             ret = "EMPTY";
         }
         
