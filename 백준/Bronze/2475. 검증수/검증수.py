@@ -1,7 +1,5 @@
 num = list(map(int, input().split()))
 
-result = 0
-for i in num:
-    result += i * i
+result = sum(i ** 2 for i in num) % 10
 
-print(result % 10)
+print(result)
