@@ -10,7 +10,4 @@ def solution(l, r):
         if check:
             answer.append(i)
             
-    if not answer:
-        return [-1]
-            
-    return answer
+    return answer if answer else [-1]
