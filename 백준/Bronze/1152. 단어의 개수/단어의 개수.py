@@ -1,2 +1,2 @@
-li = list(input().split())
+li = input().split()
 print(len(li))
