@@ -3,16 +3,10 @@ def solution(n, slicer, num_list):
     a, b, c = slicer
     
     if n == 1:
-        for i in range(b+1):
-            answer.append(num_list[i])
+        return num_list[:b+1]
     elif n == 2:
-        for i in range(a, len(num_list)):
-            answer.append(num_list[i])
+        return num_list[a:]
     elif n == 3:
-        for i in range(a, b+1):
-            answer.append(num_list[i])
+        return num_list[a:b+1]
     elif n == 4:
-        for i in range(a, b+1, slicer[2]):
-            answer.append(num_list[i])
-    
-    return answer
+        return num_list[a:b+1:c]
