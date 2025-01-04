@@ -4,10 +4,9 @@ def solution(arr, k):
     for i in arr:
         if i not in arrSet:
             arrSet.append(i)
+        if len(arrSet) == k:
+            break
     
-    arr = arrSet[:k]
+    arr = arrSet
     
-    while len(arr) < k:
-        arr += [-1]
-    
-    return arr
+    return arr + [-1] * (k - len(arr))
