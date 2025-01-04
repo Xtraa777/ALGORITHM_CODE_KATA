@@ -1,14 +1,10 @@
 def solution(arr, flag):
     answer = []
-    arrFlag = list(zip(arr, flag))
 
-    for key, value in arrFlag:
-        if value == True:
-            for _ in range(key):
-                answer.append(key)
-                answer.append(key)
+    for i, j in zip(arr, flag):
+        if j == True:
+            answer += [i] * (i * 2)
         else:
-            for _ in range(key):
-                answer.pop()
+            answer = answer[:-i]
     
     return answer
