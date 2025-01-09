@@ -1,10 +1,8 @@
 def solution(order):
     count = 0
     
-    for i in order:
-        if 'americano' in i:
-            count += 4500
-        elif 'latte' in i:
+    for coffee in order:
+        if 'latte' in coffee:
             count += 5000
         else:
             count += 4500
