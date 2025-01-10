@@ -1,11 +1,11 @@
 def solution(board, k):
-    check = []
+    answer = 0
     
     for i in range(len(board)):
         for j in range(len(board[0])):
             if i + j <= k:
-                check.append(board[i][j])
+                answer += board[i][j]
             else:
                 break;
     
-    return sum(check)
+    return answer
