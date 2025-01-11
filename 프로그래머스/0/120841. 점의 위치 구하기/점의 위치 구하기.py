@@ -1,5 +1,5 @@
 def solution(dot):
     
-    dotList = [[1, 4], [2, 3]]
+    dotList = [[2, 1], [3, 4]]
     
-    return dotList[dot[0] < 0][dot[1] < 0]
+    return dotList[dot[1] < 0][dot[0] > 0]
