@@ -1,10 +1,10 @@
 # [level 0] 홀짝 구분하기 - 181944 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181944?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181944) 
 
 ### 성능 요약
 
-메모리: 7.54 MB, 시간: 30.39 ms
+메모리: 7.44 MB, 시간: 40.43 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 30일 16:43:52
+2025년 04월 24일 02:10:15
 
 ### 문제 설명
 
