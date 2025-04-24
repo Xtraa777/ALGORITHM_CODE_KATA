@@ -1,3 +1,3 @@
 def solution(arr):
-    answer = ''.join([x for x in arr])
+    answer = ''.join(arr)
     return answer
