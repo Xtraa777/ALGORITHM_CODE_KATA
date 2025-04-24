@@ -1,4 +1,3 @@
 def solution(str1, str2):
-    answer = ''.join([str1[i] + str2[i] for i in range(len(str1))])
-    
+    answer = ''.join([x + y for x, y in zip(str1, str2)])
     return answer
