@@ -1,13 +1,11 @@
+from collections import Counter
+
 def solution(array):
-    answer = 0
-    set_array = set(array)
+    c = Counter(array).most_common(2)
     
-    max_count = 0
-    for i in set_array:
-        count = array.count(i)
-        if max_count < count:
-            max_count = count
-            answer = i
-        elif max_count == count:
-            answer = -1
-    return answer
+    if len(c) == 1:
+        return c[0][0]
+    elif c[0][1] == c[1][1]:
+        return -1
+    else:
+        return c[0][0]
