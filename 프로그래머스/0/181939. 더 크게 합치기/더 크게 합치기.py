@@ -1,6 +1,8 @@
 def solution(a, b):
-    ab = str(a) + str(b)
-    ba = str(b) + str(a)
+    a = str(a)
+    b = str(b)
     
-    answer = int(ab) if int(ab) >= int(ba) else int(ba)
-    return answer
+    if int(a + b) > int(b + a):
+        return int(a + b)
+    else:
+        return int(b + a)
