@@ -1,5 +1,9 @@
-def solution(angle) :
-    if angle <= 90 :
-        return 2 if angle == 90 else 1        
-    elif 90 < angle:
-        return 4 if angle == 180 else 3
+def solution(angle):
+    if angle == 90:
+        return 2
+    elif angle < 90:
+        return 1
+    elif angle == 180:
+        return 4
+    
+    return 3
