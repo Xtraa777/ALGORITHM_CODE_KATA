@@ -1,7 +1,3 @@
 def solution(age):
-    answer = ''
-    
-    for i in str(age):
-        answer += chr(97 + int(i))
-    
+    answer = ''.join([chr(97 + int(x)) for x in str(age)])
     return answer
