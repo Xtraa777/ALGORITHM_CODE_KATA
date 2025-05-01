@@ -6,7 +6,7 @@ stack = []
 top = -1
 
 for _ in range(n):
-    temp = list(map(str, input().split()))
+    temp = input().split()
     if temp[0] == 'push':
         stack.append(int(temp[1]))
         top += 1
