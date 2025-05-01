@@ -1,6 +1,3 @@
-def valid_route(x, y):
-    return -5 <= x <= 5 and -5 <= y <= 5
-
 def update_coordinate(x, y, dir):
     if dir == 'U':
         nx, ny = x, y + 1
@@ -18,10 +15,9 @@ def solution(dirs):
     
     for dir in dirs:
         nx, ny = update_coordinate(x, y, dir)
-        if not valid_route(nx, ny):
-            continue
-        answer.add((x, y, nx, ny))
-        answer.add((nx, ny, x, y))
-        x, y = nx, ny
+        if -5 <= nx <= 5 and -5 <= ny <= 5:
+            answer.add((x, y, nx, ny))
+            answer.add((nx, ny, x, y))
+            x, y = nx, ny
         
     return len(answer) / 2
