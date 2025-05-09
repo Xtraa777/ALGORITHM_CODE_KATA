@@ -7,17 +7,18 @@ def update_coordinate(x, y, dir):
         nx, ny = x + 1, y
     elif dir == 'L':
         nx, ny = x - 1, y
+        
     return nx, ny
 
 def solution(dirs):
-    x, y = 0, 0
     answer = set()
+    x, y = 0, 0
     
     for dir in dirs:
         nx, ny = update_coordinate(x, y, dir)
         if -5 <= nx <= 5 and -5 <= ny <= 5:
-            answer.add((x, y, nx, ny))
             answer.add((nx, ny, x, y))
+            answer.add((x, y, nx, ny))
             x, y = nx, ny
-        
+    
     return len(answer) / 2
