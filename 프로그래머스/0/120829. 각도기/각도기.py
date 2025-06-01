@@ -5,5 +5,4 @@ def solution(angle):
         return 1
     elif angle == 180:
         return 4
-    
     return 3
