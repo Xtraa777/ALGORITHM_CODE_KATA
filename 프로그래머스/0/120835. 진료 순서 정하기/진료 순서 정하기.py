@@ -5,5 +5,4 @@ def solution(emergency):
     descDict = {key: value + 1 for value, key in enumerate(desc)}
 
     answer = [descDict[i] for i in emergency]
-    
     return answer
